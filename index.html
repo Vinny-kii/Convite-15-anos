@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1e5bc9"><title>Confirme sua presença • Vinnícius Akira 15 anos</title>
+<style>
+:root{--deep:#063b58;--ink:#07364b;--cyan:#a9eff8;--teal:#28b4bb;--line:#367e8e;--pale:#8fd8e3;--blue:#3538f3;--purple:#9586ff;--white:#fff;--shadow:0 18px 55px #062f4c55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background-color:#0a4663;background-image:radial-gradient(ellipse at 15% 20%,#76c7d588,transparent 38%),radial-gradient(ellipse at 85% 15%,#062c51cc,transparent 40%),radial-gradient(ellipse at 75% 80%,#58a5ad99,transparent 35%),repeating-radial-gradient(ellipse at 30% 60%,#a2e1e333 0 3px,#0a466300 5px 16px),linear-gradient(130deg,#174b66,#0a2c4a 55%,#4a9aa7);background-attachment:fixed}
+.layout{width:min(900px,100%);margin:auto;padding:clamp(12px,2.5vw,30px);display:grid;grid-template-columns:minmax(0,1fr);gap:0;align-items:start}
+.form-card{background:var(--cyan);border:13px solid var(--teal);border-radius:25px;padding:clamp(17px,2.3vw,30px);box-shadow:var(--shadow)}
+h1{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.1;margin:0 0 30px;font-weight:900;letter-spacing:-.035em;color:#06394c}
+.intro{margin:-17px 0 25px;line-height:1.45;color:#164d60}.field{margin:0 0 26px}.field>label,.field legend{display:block;font-weight:800;margin:0 0 9px;font-size:1.02rem}.required{font-weight:900}.text-input,.textarea{width:100%;border:1.5px solid #438b9c;background:#b6f2fa;border-radius:12px;padding:12px 13px;font:inherit;color:#07364b;outline-offset:3px}.text-input{min-height:41px}.textarea{min-height:72px;resize:vertical}.text-input:focus,.textarea:focus{outline:3px solid #1a929f}
+fieldset{border:0;padding:0;margin:0}.options{display:grid;gap:8px}.option{display:flex;gap:9px;align-items:flex-start;padding:11px 13px;border-radius:12px;background:#91d9e4;color:#164658;line-height:1.3;cursor:pointer}.option input{accent-color:#087d94;flex:0 0 auto;width:16px;height:16px;margin:2px 0 0}.option:has(input:checked){background:#70ccd9;box-shadow:inset 0 0 0 2px #218b9a}.hint{font-size:.86rem;color:#376a78;margin-top:6px}.submit{width:100%;border:0;border-radius:999px;padding:13px 16px;background:var(--teal);color:#063b4c;font-weight:900;font-size:1.1rem;cursor:pointer}.submit:hover{filter:brightness(.96)}.submit:disabled{opacity:.65;cursor:wait}.privacy{text-align:center;color:#397182;font-size:.76rem;margin:8px 0 0}.status{display:none;margin:16px 0 0;border-radius:12px;padding:12px;background:#fff9d5;color:#344b23;font-weight:700}.status.show{display:block}
+.footer-note{color:#e2faff;text-align:center;font-size:.85rem;padding:0 16px 24px}
+@media(max-width:760px){.layout{grid-template-columns:1fr;padding:12px;gap:0}.form-card{border-width:8px;border-radius:19px;padding:18px}.form-card h1{margin-bottom:24px}.field{margin-bottom:22px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<main>
+<section class="form-card" id="confirmacao">
+<h1>Confirme sua presença!</h1>
+<p class="intro">Vinnícius Akira • 15 anos<br>Domingo, 4 de abril de 2027 · 12h30 às 18h30<br>Local: endereço a confirmar.</p>
+<form id="rsvpForm">
+<div class="field"><label for="nome">Me fale seu nome (de nascença ou social):<span class="required">*</span></label><input class="text-input" id="nome" name="nome" autocomplete="name" required></div>
+<div class="field"><label for="telefone">Seu telefone?<span class="required">*</span></label><input class="text-input" id="telefone" name="telefone" type="tel" autocomplete="tel" required></div>
+<fieldset class="field"><legend>Gênero:</legend><div class="options">
+<label class="option"><input type="checkbox" name="genero" value="Feminino (cis/trans): ela/dela">Feminino (cis/trans): ela/dela</label>
+<label class="option"><input type="checkbox" name="genero" value="Masculino (cis/trans): ele/dele">Masculino (cis/trans): ele/dele</label>
+<label class="option"><input type="checkbox" name="genero" value="Não-binárie: elu/delu">Não-binárie: elu/delu</label>
+<label class="option"><input type="checkbox" name="genero" value="Agênero: el*/del*">Agênero: el*/del*</label>
+<label class="option"><input type="checkbox" name="genero" value="Bigênero: ela/dele, ela/delu, ela/del*, ele/delu, ele/del*, elu/del*, etc.">Bigênero: ela/dele, ela/delu, ela/del*, ele/delu, ele/del*, elu/del*, etc.</label>
+<label class="option"><input type="checkbox" name="genero" value="Outro">Outro! (ᗒωᗕ)</label>
+</div><div class="hint">Opcional. Marque a opção ou opções que preferir.</div></fieldset>
+<fieldset class="field"><legend>Você virá?<span class="required">*</span></legend><div class="options">
+<label class="option"><input type="radio" name="presenca" value="Claro! Pode salvar minha presença" required>Claro! Pode salvar minha presença</label>
+<label class="option"><input type="radio" name="presenca" value="Queria, mas não posso…">Queria, mas não posso…</label>
+<label class="option"><input type="radio" name="presenca" value="Dessa vez, não. Deixa pra próxima!">Dessa vez, não. Deixa pra próxima!</label>
+<label class="option"><input type="radio" name="presenca" value="Ainda não sei. Depois mando mensagem.">Ainda não sei. Depois mando mensagem.</label>
+</div></fieldset>
+<div class="field"><label for="acompanhantes">Vai levar acompanhante? Se sim, qual é a categoria deles e quantos acompanhantes pretende levar?<span class="required">*</span></label><textarea class="textarea" id="acompanhantes" name="acompanhantes" required placeholder="Ex.: vou sozinho / 2 familiares / 1 amigo e 1 responsável"></textarea><div class="hint">Lembrete: menores de 18 anos podem levar até 4 acompanhantes, avisando antes.</div></div>
+<div class="field"><label for="musicas">Indique música(s) para nossa playlist!</label><textarea class="textarea" id="musicas" name="musicas" placeholder="Sugira músicas que você gostaria de ouvir (opcional)"></textarea></div>
+<div class="field"><label for="email">Seu email?</label><input class="text-input" id="email" name="email" type="email" autocomplete="email"></div>
+<button class="submit" id="submitBtn" type="submit">Agora eu confirmo! ( ω )</button>
+<p class="privacy">Suas respostas serão enviadas ao organizador por meio da planilha configurada. Nunca envie senhas.</p>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</main>
+</div>
+<p class="footer-note">Vinnícius Akira • 15 anos · 🌊💛🦈</p>
+<script>
+// Cole aqui o URL do Web App do Google Apps Script depois de publicá-lo.
+const GOOGLE_SCRIPT_URL = "COLE_AQUI_A_URL_DO_WEB_APP";
+const form = document.getElementById('rsvpForm');
+const button = document.getElementById('submitBtn');
+const statusBox = document.getElementById('status');
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  statusBox.classList.remove('show');
+  if (!form.reportValidity()) return;
+  if (!GOOGLE_SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) {
+    statusBox.textContent = 'O formulário está pronto, mas ainda falta conectar a planilha de respostas. Siga o LEIA-ME para configurar a opção gratuita.';
+    statusBox.classList.add('show');
+    return;
+  }
+  button.disabled = true; button.textContent = 'Enviando…';
+  try {
+    const data = new FormData(form);
+    const body = new URLSearchParams();
+    for (const [key, value] of data.entries()) body.append(key, value);
+    await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', mode: 'no-cors', body });
+    statusBox.textContent = 'Obrigado! Sua resposta foi enviada. Se precisar corrigir algo, entre em contato com o aniversariante.';
+    statusBox.classList.add('show'); form.reset();
+  } catch (err) {
+    statusBox.textContent = 'Não conseguimos enviar agora. Confira sua conexão ou tente novamente mais tarde.';
+    statusBox.classList.add('show');
+  } finally { button.disabled = false; button.textContent = 'Agora eu confirmo! ( ω )'; }
+});
+</script>
+</body></html>
